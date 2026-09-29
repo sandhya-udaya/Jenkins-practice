@@ -17,12 +17,17 @@ pipeline{
         stage('Checkout'){
             steps{
                 echo 'Checking out Source Code From Git Repo'
-                Checkout scm
+                checkout scm
+            }
+        }
+        stage('Check Docker'){
+            steps{
+                bat 'docker --version'
             }
         }
         stage('Dependencies'){
             steps{
-                bat 'npm insall'
+                bat 'npm install'
             }
         }
         stage('Test App'){
