@@ -9,6 +9,6 @@ app.get("/",(req,res)=>{
 })
 
 
-app.listen(PORT,"0.0.0.0",()->{
+app.listen(PORT,"0.0.0.0",()=>{
     console.log('SERVER is UP and Running...!')
 })
