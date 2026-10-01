@@ -8,9 +8,8 @@ pipeline{
             description:'Server Port'
         )
             
-        }
     }
-
+    
     environment{
         IMAGE_NAME='jenkins-demo-app'
     }
@@ -61,4 +60,7 @@ pipeline{
             }
         }
     }
+
 }
+
+    
