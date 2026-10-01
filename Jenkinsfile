@@ -2,10 +2,12 @@ pipeline{
     agent any
 
     parameters{
-        string{
+        string(
             name:'APP_PORT',
             defaultValue:'3000',
             description:'Server Port'
+        )
+            
         }
     }
 
